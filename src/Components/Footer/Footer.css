@@ -75,3 +75,39 @@
         margin-bottom: 50px;
     }
 }
+@media (max-width: 480px) {
+    .footer {
+        margin: 30px 10px; 
+    }
+
+    .footer-top-left p {
+        font-size: 16px;
+    }
+
+    .footer-email-input {
+        padding: 10px 15px;
+    }
+
+    .footer-subscribe {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer-bottom {
+        gap: 5px;
+    }
+}
+@media (max-width: 1200px) {
+    .footer {
+        padding: 0 40px; 
+    }
+
+    .footer-top-left p {
+        font-size: 18px; 
+    }
+
+    .footer-email-input input,
+    .footer-subscribe {
+        font-size: 18px;
+    }
+}

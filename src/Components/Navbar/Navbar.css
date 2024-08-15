@@ -2,17 +2,17 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 20px 170px;
+    margin: 10px 80px;
 }
 .nav-menu{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 60px;
-    font-size: 20px;
+    gap: 40px;
+    font-size: 16px;
 }
 .nav-connect{
-    padding: 20px 40px;
+    padding: 20px 20px;
     border-radius: 50px;
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
     cursor: pointer;
@@ -78,5 +78,64 @@
         padding-left: 100px;
         flex-direction: row;
         gap: 20px;
+    }
+}
+
+@media(max-width: 480px){
+    .navbar{
+        margin: 20px;
+    }
+    .nav-menu{
+        width: 100%;
+        right: -100%;
+    }
+    .nav-mob-close{
+        left: 90%;
+    }
+    .nav-menu li{
+        font-size: 24px;
+        padding-left: 20px;
+    }
+}
+
+/* Medium Devices (Tablets) - Between 768px to 1024px */
+@media(min-width: 769px) and (max-width: 1024px) {
+    .navbar{
+        margin: 20px 30px;
+    }
+    .nav-menu{
+        gap: 20px;
+    }
+    .nav-menu li{
+        font-size: 18px;
+    }
+    .nav-connect{
+        padding: 15px 15px;
+    }
+}
+
+/* Large Devices (Laptops) - Between 1025px to 1200px */
+@media(min-width: 1025px) and (max-width: 1200px) {
+    .navbar{
+        margin: 10px 10px;
+    }
+    .nav-menu{
+        gap: 35px;
+    }
+    .nav-menu li{
+        font-size: 15px;
+    }
+}
+
+/* Extra Large Devices (Desktops) - 1200px and above */
+@media(min-width: 1201px) {
+    .navbar{
+        margin: 15px 80px;
+    }
+    .nav-menu{
+        gap: 40px;
+    }
+    .nav-menu li{
+        font-size: 16px;
     }
 }

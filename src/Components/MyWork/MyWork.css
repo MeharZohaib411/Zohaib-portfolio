@@ -84,3 +84,25 @@ margin: 80px 170px;
             cursor: pointer;
         }
     }
+@media (max-width: 1200px) {
+    .mywork-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .my-work {
+        margin: 80px 100px;
+    }
+}
+
+/* Media Query for Very Large Screens */
+@media (min-width: 1600px) {
+    .my-work {
+        max-width: 1600px;
+        margin: 80px auto;
+    }
+    .mywork-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}    

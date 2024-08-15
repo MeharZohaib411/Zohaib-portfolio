@@ -5,6 +5,8 @@
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
+    max-width: 1250px;
+    padding: 0 20px; 
     }
     .contact-title{
     position: relative;
@@ -169,5 +171,15 @@
     .contact-submit{
         font-size: 20px;
         padding: 15px 40px;
+    }
+}
+@media(max-width: 1200px) {
+    .contact {
+        padding: 0 40px;
+    }
+    
+    .contact-right input,
+    .contact-right textarea {
+        width: 100%;
     }
 }

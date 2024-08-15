@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 .about-skills{
@@ -49,7 +49,7 @@
 }
 .about-skill p{
     min-width: 150px;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 500;
 }
 .about-skill hr{
@@ -101,7 +101,7 @@
     .about{
         margin: 50px 70px;
         gap: 80px;
-        align-items: start;
+        align-items: flex-start;
     }
     .about-title h1{
         font-size: 50px;
@@ -136,6 +136,7 @@
     }
     .about-achievements{
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .about-achievement{
         gap: 10px;
@@ -147,5 +148,54 @@
     .about-achievement p{
         font-size: 18px;
         align-items: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .about {
+        margin: 30px 40px;
+        gap: 60px;
+    }
+    .about-title h1 {
+        font-size: 40px;
+    }
+    .about-title img {
+        width: 100px;
+        right: -15px;
+    }
+    .about-para {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .about-skill p {
+        font-size: 18px;
+    }
+    .about-achievement h1 {
+        font-size: 25px;
+    }
+    .about-achievement p {
+        font-size: 16px;
+    }
+}
+
+/* Large Devices (between 1025px and 1200px) */
+@media(min-width: 1025px) and (max-width: 1200px) {
+    .about {
+        margin: 70px 150px;
+    }
+    .about-title h1 {
+        font-size: 70px;
+    }
+    .about-para {
+        font-size: 22px;
+    }
+    .about-skill p {
+        font-size: 22px;
+    }
+    .about-achievement h1 {
+        font-size: 35px;
+    }
+    .about-achievement p {
+        font-size: 20px;
     }
 }
